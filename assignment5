@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+ .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+ }
+ .brand{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+ }
+ #camera{
+    color: white;
+    font-size: 1.2rem;
+ }
+ .links{
+    display: flex;
+    margin-right: 5%; 
+ }
+ li{
+    list-style: none;
+    display: inline-block;
+    padding: .5rem;
+ }
+ 
+ a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5rem;
+ }
+ li:hover{
+    background-color: #555;
+ }
+ .toggle{
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height: 30px;
+ }
+ .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+ }
+ .toggle:hover{
+    background-color: #555;
+ }
+ @media (max-width:466px){
+    .toggle{
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+ }
+ 
+.div2{
+   display: block;
+   text-align: center;
+   width: 50%;
+   margin-left: 25%;
+   margin-top: 10%;
+}
+
+#btn{
+    width: 130px;
+    padding: .5rem;
+    color: white;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+   
+
+}    
+#btn2{
+    width: 130px;
+    padding: .5rem;
+    color: white;
+    background-color: #555;
+    border-color: #555;
+    
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:554px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+.parent1{
+    background-color: pink;
+    margin: 5%;
+    
+}
+.child{
+    background-color: rgb(241, 239, 239);
+    overflow: hidden;
+    width: 100%;
+}
+
+h2{
+    background-color: #555;
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    color: white; 
+    word-wrap: break-word;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    word-wrap: break-word;
+}
+.btn4{
+    margin: 0px;
+    float: left;
+}
+</style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="brand"> 
+       <i id="camera" class="fas fa-camera"></i>
+         Album
+        </div>
+        <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="div2">
+        <h1>Album example</h1>
+        <p>Something short and leading about the collection below---its contents,
+            the creater,etc.Make it short and sweet,but not too short so folks don't
+            simply skip over it entirely</p> 
+        </p>
+        <button id="btn">Main call to action</button>
+        <button id="btn2">Secondary action</button>
+    </div>
+    <div class="container">
+    <div class="parent1"><div class="child"><h2>Thumbnail</h2>
+    <p>This is a wider card with supporting text
+        below as a natural lead-in to additional
+        content.This content is a bit a longer.
+    </p>
+    <button class="btn4">View</button><button class="btn4">Edit</button>
+    </div>
+    </div>
+    <div class="parent1"><div class="child"><h2>Thumbnail</h2>
+        <p>This is a wider card with supporting text
+            below as a natural lead-in to additional
+            content.This content is a bit a longer.
+        </p>
+        <button class="btn4">View</button><button class="btn4">Edit</button>
+        </div>
+        </div>
+        <div class="parent1"><div class="child"><h2>Thumbnail</h2>
+            <p>This is a wider card with supporting text
+                below as a natural lead-in to additional
+                content.This content is a bit a longer.
+            </p>
+            <button class="btn4">View</button><button class="btn4">Edit</button>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
